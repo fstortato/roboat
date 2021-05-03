@@ -1,0 +1,31 @@
+﻿<ion-modal-view>
+  <ion-content class="dark-background" scroll="false">
+    <div class="spacer" style="height: 15px"></div>
+    <img class="full-image" src="img/logo.png" alt="Roboat logo" style="padding: 50px"/>
+    <div class="spacer dark-background" style="height: 15px"></div>
+    <form ng-submit="doLogin()">
+      <div class="list list-inset side-margins-medium">
+        <label class="item item-input dark-background blue-bottom-border">
+          <input class="input-font-color" type="text" placeholder="Piloto" ng-model="loginData.userName">
+        </label>
+        <div class="spacer dark-background" style="height: 2px"></div>
+        <label class="item item-input dark-background blue-bottom-border">
+          <input class="input-font-color" type="password" placeholder="Senha" ng-model="loginData.password">
+        </label>
+      </div>
+      <div class="spacer" style="height: 20px"></div>
+      <div class="side-margins-short">
+        <div class="spacer dark-background" style="height: 2px"></div>
+        <label class="item dark-background" style="border: none">
+          <button class="button button-block button-positive icon-left ion-android-boat" type="submit">Navegar</button>
+        </label>
+      </div>
+    </form>
+    <ion-spinner class="spinner-positive" icon="spiral" style="position: absolute; left: 45%" ng-show="showLoading"></ion-spinner>
+    <div class="card warning" style="margin-top: 0" ng-show="showWarning">
+      <div class="item item-text-wrap" ng-class="backgroundColor" style="text-align: center; color: white; font-size: 80%">
+        {{warningText}}
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,12 @@
+﻿<ion-view view-title="Sala de Troféus">
+  <ion-content class="dark-background">
+    <div class="list card dark-background" style="color: white">
+      <div class="item item-avatar dark-background blue-bottom-border" ng-repeat="card in cards" style="margin-top: 10px; color: white">
+        <img class="full-image" ng-src="{{trophyPicturesPath[card.competitionRank-1] || trophyPicturesPath[3]}}">
+        <h2 style="color: white">{{card.competitionName}} {{card.competitionYear}}</h2>
+        <p style="color: white">{{card.competitionRank}}/{{card.competitionNTeams}}º lugar</p>
+        <span style="font-size: 12px;" ng-click="moreInfo(card)"><i class="icon ion-plus-round" style="font-size: 18px; vertical-align: -12.5%; color: white;"></i>&nbsp; Mais</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,88 @@
+﻿/* Background colors */
+.dark-background {
+  background-color: #1F1F1F
+}
+
+.blue-background {
+  background-color: #1D97FA
+}
+
+.error-background {
+  background-color: #fb2727
+}
+
+.success-background {
+  background-color: #21e12b
+}
+
+/* Warning borders */
+.warning {
+  border: none;
+  border-radius: 10px
+}
+
+/* Font colors */
+.blue-font-color {
+  color: #1D97FA
+}
+
+/* Table design */
+.table-header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
+}
+
+/* Lists */
+.blue-bottom-top-border {
+  border-top: 1.5px solid #1D97FA;
+  border-bottom: 1.5px solid #1D97FA;
+  border-left: none;
+  border-right: none
+}
+
+.blue-bottom-border {
+  border-top: none;
+  border-bottom: 1.5px solid #1D97FA;
+  border-left: none;
+  border-right: none
+}
+
+/* Login form styles*/
+input.input-font-color {
+  color: white;
+}
+
+input:focus {
+  color: #1D97FA;
+}
+
+.side-margins-medium {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  margin-right: 40px
+}
+
+.side-margins-short {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+/* Range formating */
+
+.range input::-webkit-slider-thumb {
+  background-color: #1D97FA;
+}
+
+.roboatrange {
+  width: 50vw;
+  height: 16vw;
+  background-color: #1F1F1F;
+  position: relative;
+  border: none;
+}

@@ -1,0 +1,95 @@
+﻿<ion-view view-title="Controle Remoto">
+  <ion-content class="dark-background">
+
+    <!-- Controles personalizados 1 e 2 -->
+      <div class="row">
+        <div class="col col-50" style="margin:0;">
+          <div class="item item-toggle slidebutton dark-background" style="color: white; border: none">
+            C1
+            <label class="toggle toggle-positive">
+              <input type="checkbox" ng-model="inputs.c1">
+              <div class="track">
+                <div class="handle" style="background-color: #1D97FA;"></div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="col col-50">
+          <div class="item item-toggle slidebutton dark-background" style="color: white; border: none">
+            C2
+            <label class="toggle toggle-positive">
+              <input type="checkbox" ng-model="inputs.c2">
+              <div class="track">
+                <div class="handle" style="background-color: #1D97FA;"></div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    <!-- Controles personalizados 3 e 4 -->
+      <div class="row blue-bottom-border" style="margin-bottom: 2px">
+        <div class="col col-50">
+          <div class="item item-toggle slidebutton dark-background" style="color: white; border: none">
+            C3
+            <label class="toggle toggle-positive">
+              <input type="checkbox" ng-model="inputs.c3">
+              <div class="track">
+                <div class="handle" style="background-color: #1D97FA;"></div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="col col-50">
+          <div class="item item-toggle slidebutton dark-background" style="color: white; border: none">
+            C4
+            <label class="toggle toggle-positive">
+              <input type="checkbox" ng-model="inputs.c4">
+              <div class="track">
+                <div class="handle" style="background-color: #1D97FA;"></div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    <!-- Farol do barco -->
+    <div class="item range toggle-positive dark-background blue-bottom-border">
+      <i class="icon ion-ios-lightbulb-outline positive"></i>
+      <input type="range" class="range" ng-model="inputs.light">
+      <i class="icon ion-ios-lightbulb positive" ></i>
+    </div>
+
+    <!-- Ativar controle remoto -->
+    <div class="item item-toggle slidebutton dark-background blue-bottom-border" style="color: white">
+      Habilitar joystick
+      <label class="toggle toggle-positive">
+        <input type="checkbox" ng-model="inputs.joy">
+        <div class="track">
+          <div class="handle" style="background-color: #1D97FA;"></div>
+        </div>
+      </label>
+    </div>
+
+    <!-- Joystick para o barco -->
+    <div style="width:100%;">
+      <div class="item range roboatrange" style="transform: rotate(-90deg); top: 20vw; right: 3vw;">
+        <i class="icon ion-arrow-down-b positive" style="transform: rotate(90deg)"></i>
+        <input type="range" ng-model="inputs.vert">
+        <i class="icon ion-arrow-up-b positive" style="transform: rotate(90deg)"></i>
+      </div>
+    </div>
+
+    <div class="item range roboatrange" style="left: 35vw; top: 4vw;">
+      <i class="icon ion-arrow-left-b positive"></i>
+      <input type="range" ng-model="inputs.horiz">
+      <i class="icon ion-arrow-right-b positive"></i>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="card dark-background" style="margin-top: 25%; color: red">
+      {{warnings}}
+    </div>
+
+  </ion-content>
+</ion-view>
